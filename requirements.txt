@@ -1,0 +1,37 @@
+# Invoice Reconciliation Multi-Agent System
+# Requirements
+
+# Core LLM & Agent Framework
+langgraph>=0.0.40
+langchain>=0.1.0
+langchain-core>=0.1.0
+
+# PDF Processing
+PyMuPDF>=1.23.0          # Fast PDF text extraction (fitz)
+Pillow>=10.0.0           # Image processing
+
+# Data Processing
+pydantic>=2.0.0          # Data validation and models
+python-dotenv>=1.0.0     # Environment variables
+
+# Fuzzy Matching
+rapidfuzz>=3.0.0         # Fast fuzzy string matching
+thefuzz>=0.20.0          # Fuzzy string matching (backup)
+
+# HTTP Requests (for Gemini REST API)
+requests>=2.28.0
+
+# Streamlit UI
+streamlit>=1.30.0
+plotly>=5.18.0           # Interactive charts
+streamlit-extras>=0.3.0  # Extra Streamlit components
+
+# Utilities
+rich>=13.0.0             # Beautiful console output
+tqdm>=4.65.0             # Progress bars
+
+# Testing (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+google-generativeai # Gemini API client
