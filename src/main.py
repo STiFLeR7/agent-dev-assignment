@@ -18,7 +18,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Invoice Reconciliation Multi-Agent System",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=
+        epilog="Examples:\n  python -m src.main\n  python -m src.main --invoice Invoice_1.pdf\n  python -m src.main --verbose"
     )
     
     parser.add_argument(
