@@ -44,7 +44,7 @@ def parse_args():
         "--api-key",
         type=str,
         default=None,
-        help="OpenAI API key (default: use OPENAI_API_KEY env var)"
+        help="Gemini API key (default: use GEMINI_API_KEY env var)"
     )
     
     return parser.parse_args()
@@ -134,7 +134,7 @@ def main():
         workflow = InvoiceReconciliationWorkflow(api_key=args.api_key)
     except Exception as e:
         console.print(f"[red]Error initializing workflow: {e}[/red]")
-        console.print("[yellow]Make sure OPENAI_API_KEY is set in your environment or .env file[/yellow]")
+        console.print("[yellow]Make sure GEMINI_API_KEY is set in your environment or .env file[/yellow]")
         sys.exit(1)
     
     if args.invoice:
